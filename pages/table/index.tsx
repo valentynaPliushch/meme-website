@@ -164,11 +164,13 @@ export default function TableView() {
                     <Input
                       type="number"
                       label="Likes"
+                      variant="underlined"
                       classNames={{
                         input: "bg-white cursor-default",
                       }}
                       value={editingMeme.likes.toString()}
-                      onChange={(e) => handleInputChange(e, "likes")}
+                      disabled
+                      isReadOnly
                       required
                     />
                   </div>
